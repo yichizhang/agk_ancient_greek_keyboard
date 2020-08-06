@@ -1,0 +1,15 @@
+{
+  "commitish" : "4.0.0",
+  "iOS" : [
+    {
+      "name" : "SwiftyUserDefaults",
+      "hash" : "61ab1ca6cea767c104aba62344415e3db966da90a34afb43b15c6ecb205b7ac9",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    },
+    {
+      "name" : "SwiftyUserDefaults",
+      "hash" : "61ab1ca6cea767c104aba62344415e3db966da90a34afb43b15c6ecb205b7ac9",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    }
+  ]
+}

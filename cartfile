@@ -1,0 +1,9 @@
+# github "jehiah/TurtleBezierPath" "fabsf_Fix_1"
+
+github "ManueGE/Actions" ~> 3.0.1
+github "duemunk/Async" ~> 2.1.0
+github "xmartlabs/Eureka" ~> 4.3.1
+github "alibaba/handyjson" ~> 4.2.0
+github "stijnster/NSString-compareToVersion"
+github "sunshinejr/SwiftyUserDefaults" ~> 4.0.0
+github "devxoul/Then" ~> 2.4.0

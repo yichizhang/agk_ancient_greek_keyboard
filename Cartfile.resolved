@@ -1,0 +1,7 @@
+github "ManueGE/Actions" "3.0.1"
+github "alibaba/handyjson" "4.2.1"
+github "devxoul/Then" "2.7.0"
+github "duemunk/Async" "2.1.0"
+github "stijnster/NSString-compareToVersion" "0.6"
+github "sunshinejr/SwiftyUserDefaults" "4.0.0"
+github "xmartlabs/Eureka" "4.3.1"

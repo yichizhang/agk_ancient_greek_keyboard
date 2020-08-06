@@ -1,0 +1,207 @@
+{
+  "language": "el-GR",
+  "layoutID": "layout.el.gr.agk.default.A",
+  "name": "Ancient Greek (Style A)",
+  "version": "1.0.0",
+  "parentLayouts": [
+    "layout.el.gr.agk.base"
+  ],
+  "displayStringMap": {
+  },
+  "inputStringMap": {
+  },
+  "layoutStates": {
+    "lowercase": [
+      [
+       "GREEK SMALL LETTER FINAL SIGMA",
+       "GREEK SMALL LETTER EPSILON",
+       "GREEK SMALL LETTER RHO",
+       "GREEK SMALL LETTER TAU",
+       "GREEK SMALL LETTER UPSILON",
+       "GREEK SMALL LETTER THETA",
+       "GREEK SMALL LETTER IOTA",
+       "GREEK SMALL LETTER OMICRON",
+       "GREEK SMALL LETTER PI",
+       "GREEK PSILI",
+       "GREEK DASIA"
+       ],
+      [
+       "GREEK PSILI AND PERISPOMENI",
+       "GREEK SMALL LETTER ALPHA",
+       "GREEK SMALL LETTER SIGMA",
+       "GREEK SMALL LETTER DELTA",
+       "GREEK SMALL LETTER PHI",
+       "GREEK SMALL LETTER GAMMA",
+       "GREEK SMALL LETTER ETA",
+       "GREEK SMALL LETTER XI",
+       "GREEK SMALL LETTER KAPPA",
+       "GREEK SMALL LETTER LAMBDA",
+       "ACUTE ACCENT",
+       "GRAVE ACCENT"
+       ],
+      [
+       "SYSTEM KEY - SHIFT",
+       "SYSTEM - LAYOUT GROUP DIVIDER",
+       "GREEK SMALL LETTER ZETA",
+       "GREEK SMALL LETTER CHI",
+       "GREEK SMALL LETTER PSI",
+       "GREEK SMALL LETTER OMEGA",
+       "GREEK SMALL LETTER BETA",
+       "GREEK SMALL LETTER NU",
+       "GREEK SMALL LETTER MU",
+       "GREEK PERISPOMENI",
+       "GREEK PROSGEGRAMMENI",
+       "SYSTEM - LAYOUT GROUP DIVIDER",
+       "SYSTEM KEY - DELETE"
+       ],
+      [
+       "SYSTEM KEY - LETTERS OR NUMBERS",
+       "SYSTEM KEY - NEXT KEYBOARD",
+       "SYSTEM KEY - SPACE",
+       "SYSTEM KEY - MORE SYMBOLS",
+       "SYSTEM KEY - DONE"
+       ]
+      ],
+    "number": [
+      [
+       "DIGIT ONE",
+       "DIGIT TWO",
+       "DIGIT THREE",
+       "DIGIT FOUR",
+       "DIGIT FIVE",
+       "DIGIT SIX",
+       "DIGIT SEVEN",
+       "DIGIT EIGHT",
+       "DIGIT NINE",
+       "DIGIT ZERO"
+       ],
+      [
+       "HYPHEN-MINUS",
+       "SOLIDUS",
+       "COLON",
+       "MIDDLE DOT",
+       "LEFT PARENTHESIS",
+       "RIGHT PARENTHESIS",
+       "DOLLAR SIGN",
+       "AMPERSAND",
+       "COMMERCIAL AT",
+       "QUOTATION MARK"
+       ],
+      [
+       "SYSTEM KEY - SHIFT",
+       "SYSTEM - LAYOUT GROUP DIVIDER",
+       "FULL STOP",
+       "COMMA",
+       "SEMICOLON",
+       "EXCLAMATION MARK",
+       "APOSTROPHE",
+       "QUESTION MARK",
+       "SYSTEM - LAYOUT GROUP DIVIDER",
+       "SYSTEM KEY - DELETE"
+       ],
+      [
+       "SYSTEM KEY - LETTERS OR NUMBERS",
+       "SYSTEM KEY - NEXT KEYBOARD",
+       "SYSTEM KEY - SPACE",
+       "SYSTEM KEY - MORE SYMBOLS",
+       "SYSTEM KEY - DONE"
+       ]
+      ],
+    "uppercase": [
+      [
+       "GREEK DIALYTIKA AND OXIA",
+       "GREEK CAPITAL LETTER EPSILON",
+       "GREEK CAPITAL LETTER RHO",
+       "GREEK CAPITAL LETTER TAU",
+       "GREEK CAPITAL LETTER UPSILON",
+       "GREEK CAPITAL LETTER THETA",
+       "GREEK CAPITAL LETTER IOTA",
+       "GREEK CAPITAL LETTER OMICRON",
+       "GREEK CAPITAL LETTER PI",
+       "GREEK PSILI AND VARIA",
+       "GREEK PSILI AND OXIA"
+       ],
+      [
+       "GREEK DASIA AND PERISPOMENI",
+       "GREEK CAPITAL LETTER ALPHA",
+       "GREEK CAPITAL LETTER SIGMA",
+       "GREEK CAPITAL LETTER DELTA",
+       "GREEK CAPITAL LETTER PHI",
+       "GREEK CAPITAL LETTER GAMMA",
+       "GREEK CAPITAL LETTER ETA",
+       "GREEK CAPITAL LETTER XI",
+       "GREEK CAPITAL LETTER KAPPA",
+       "GREEK CAPITAL LETTER LAMBDA",
+       "GREEK DASIA AND VARIA",
+       "GREEK DASIA AND OXIA"
+       ],
+      [
+       "SYSTEM KEY - SHIFT",
+       "SYSTEM - LAYOUT GROUP DIVIDER",
+       "GREEK CAPITAL LETTER ZETA",
+       "GREEK CAPITAL LETTER CHI",
+       "GREEK CAPITAL LETTER PSI",
+       "GREEK CAPITAL LETTER OMEGA",
+       "GREEK CAPITAL LETTER BETA",
+       "GREEK CAPITAL LETTER NU",
+       "GREEK CAPITAL LETTER MU",
+       "DIAERESIS",
+       "BREVE",
+       "SYSTEM - LAYOUT GROUP DIVIDER",
+       "SYSTEM KEY - DELETE"
+       ],
+      [
+       "SYSTEM KEY - LETTERS OR NUMBERS",
+       "SYSTEM KEY - NEXT KEYBOARD",
+       "SYSTEM KEY - SPACE",
+       "SYSTEM KEY - MORE SYMBOLS",
+       "SYSTEM KEY - DONE"
+       ]
+      ],
+    "punctuation": [
+      [
+       "LEFT SQUARE BRACKET",
+       "RIGHT SQUARE BRACKET",
+       "LEFT CURLY BRACKET",
+       "RIGHT CURLY BRACKET",
+       "NUMBER SIGN",
+       "PERCENT SIGN",
+       "CIRCUMFLEX ACCENT",
+       "ASTERISK",
+       "PLUS SIGN",
+       "EQUALS SIGN"
+       ],
+      [
+       "LOW LINE",
+       "REVERSE SOLIDUS",
+       "VERTICAL LINE",
+       "TILDE",
+       "LESS-THAN SIGN",
+       "GREATER-THAN SIGN",
+       "EURO SIGN",
+       "POUND SIGN",
+       "YEN SIGN",
+       "BULLET"
+       ],
+      [
+       "SYSTEM KEY - SHIFT",
+       "SYSTEM - LAYOUT GROUP DIVIDER",
+       "FULL STOP",
+       "COMMA",
+       "SEMICOLON",
+       "EXCLAMATION MARK",
+       "APOSTROPHE",
+       "QUESTION MARK",
+       "SYSTEM - LAYOUT GROUP DIVIDER",
+       "SYSTEM KEY - DELETE"
+       ],
+      [
+       "SYSTEM KEY - LETTERS OR NUMBERS",
+       "SYSTEM KEY - NEXT KEYBOARD",
+       "SYSTEM KEY - SPACE",
+       "SYSTEM KEY - MORE SYMBOLS",
+       "SYSTEM KEY - DONE"
+       ]
+      ]
+  }
+}

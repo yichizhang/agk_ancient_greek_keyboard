@@ -1,0 +1,31 @@
+{
+  "Mac" : [
+    {
+      "name" : "Async",
+      "hash" : "b9eb13fbbc436c39a5f1641524173a8ceba2b0e5d7344a8d3bbca8c8a71b2b51",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "Async",
+      "hash" : "8c23445f21d989c51e148a30e1b3feb89789be5c9aefc306dbc35e356497e995",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "Async",
+      "hash" : "972962362a24b52b625d0643cf5bc6ebf8968f50b6b6d689e8cfd8cb3e82cd45",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    }
+  ],
+  "commitish" : "2.1.0",
+  "iOS" : [
+    {
+      "name" : "Async",
+      "hash" : "56c5a50fc5052fd33e750d51102d19d171b29dad60dcd2fd219cfdd3d0e5b49a",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "3.0.1",
+  "iOS" : [
+    {
+      "name" : "Actions",
+      "hash" : "d774f5d24b4d3308669e02a981a22ba803059c5ec95f0de5f760d3494c586d01",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    }
+  ]
+}

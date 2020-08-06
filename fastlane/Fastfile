@@ -1,0 +1,109 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://docs.fastlane.tools/actions
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "2.18.3"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+    ENV["SLACK_URL"] =  "https://hooks.slack.com/services/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"
+
+    # carthage
+  end
+
+  lane :screenshots do
+    capture_screenshots(scheme: "AGK")
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    scan
+  end
+
+  desc "Make an alpha build"
+  lane :alpha do
+    plist_path = './AGK/Info.plist'
+    plist_ext_path = './AGK-Keyboard/Info.plist'
+
+    ver=get_info_plist_value(path: plist_path, key: 'CFBundleShortVersionString')
+    set_info_plist_value(path: plist_ext_path, key: 'CFBundleShortVersionString', value: ver)
+    build=(sh "git rev-list --count HEAD").strip!
+    set_info_plist_value(path: plist_path, key: 'CFBundleVersion', value: build)
+    set_info_plist_value(path: plist_ext_path, key: 'CFBundleVersion', value: build)
+
+    dt = (sh "date -u +%Y-%m-%dT%H:%M:%SZ").strip!
+    commit_hash = (sh "git rev-parse --short HEAD").strip!
+    label = "#{dt}\n#{ver} (#{build}) #{commit_hash}"
+
+    sh "../scripts/watermark_icons.sh "\
+    "../AGK/Assets.xcassets/AppIcon.appiconset/ "\
+    "\"#{label}\""
+
+    gym(
+      output_name: "AGK-alpha.ipa",
+      configuration: "Release",
+      export_method: "ad-hoc"
+    )
+
+    sh "../scripts/upload_to_pgyer.sh"
+  end
+
+  desc "Deploy a new version to the App Store"
+  lane :appstore do
+    # match(type: "appstore")
+    # snapshot
+
+    # commit_version_bump
+    # Build your app - more options available
+    gym(
+      project: "AGK.xcodeproj",
+      scheme: "AGK-Keyboard",
+      clean: true,
+      output_directory: "./",
+      output_name: "AGK-prod.ipa",
+      provisioning_profile_path: "Certificates/AppStore_com.yichizhang.AGK.mobileprovision",
+      codesigning_identity: "iPhone Distribution: Yichi Zhang (4E5Q3J5F8B)",
+      include_symbols: true,
+      include_bitcode: true,
+      use_legacy_build_api: true
+    )
+
+    # deliver(force: true)
+    # frameit
+  end
+
+  # You can define as many lanes as you want
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+
+    slack(
+      message: "Success :)"
+    )
+  end
+
+  error do |lane, exception|
+    slack(
+      message: exception.message,
+      success: false
+    )
+  end
+end
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/docs/Platforms.md
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+
+# fastlane reports which actions are used
+# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer
